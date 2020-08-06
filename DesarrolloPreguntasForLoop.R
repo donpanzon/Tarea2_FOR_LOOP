@@ -1,10 +1,4 @@
-# Tarea2_FOR_LOOP
-
-Tarea 2 de For-Loop, la cual consta de 3 ejercicios
-
-
-
-**# EJERCICIO 1** 
+########## EJERCICIO 1 #################
 
 rm(list = ls())
 
@@ -16,7 +10,7 @@ listaDocumentos <- list(c("mp","Juan","Christofer"),c("of","av01","ampr"),c("of"
                         c("of","av04","dape"),c("of","av02","arme"))
 
 
-#Separando listas de medidas de protecciÃ³n, oficios u otros
+#Separando listas de medidas de protección, oficios u otros
 
 listamp <- list()
 contadormp  <- 0
@@ -27,20 +21,20 @@ for(vectores in listaDocumentos){
   if(vectores[1]=="mp"){
     listamp <- c(listamp,list(vectores[-1]))
     contadormp <- contadormp+1
-    print(paste("Una MP Tiene",length(vectores[-1]),"NiÃ±@/s"))
+    print(paste("Una MP Tiene",length(vectores[-1]),"Niñ@/s"))
   }else if(vectores[1]=="of"){
     listaof <- c(listaof,list(vectores[-1]))
-  }else {"No cumple ni con oficio ni con medida de precauciÃ³n"
+  }else {"No cumple ni con oficio ni con medida de precaución"
   }
 }
 # Entregando estadistica final
 
-estadisticafinal <- list(c("Se cuenta con 1 MP de 1 NiÃ±@"),c("Se cuenta con 2 MP de 2 NiÃ±@s"),c("Se cuenta con 1 MP de 3 NiÃ±@s"))
+estadisticafinal <- list(c("Se cuenta con 1 MP de 1 Niñ@"),c("Se cuenta con 2 MP de 2 Niñ@s"),c("Se cuenta con 1 MP de 3 Niñ@s"))
 print(estadisticafinal)
 
 
 
-**# EJERCICIO 2**
+########## EJERCICIO 2 #################
 
 rm(list = ls())
 
@@ -51,7 +45,7 @@ listaDocumentos <- list(c("mp","Juan","Christofer"),c("of","av01","ampr"),c("of"
                         c("mp","Jose","Pedro","Antonela"),c("of","av05","meca"),
                         c("of","av04","dape"),c("of","av02","arme"))
 
-#Separando listas de medidas de protecciÃ³n, oficios u otros
+#Separando listas de medidas de protección, oficios u otros
 
 listamp <- list()
 contadormp  <- 0
@@ -64,13 +58,13 @@ for(accion in listaDocumentos){
     listaof <- c(listaof,list(accion[-1]))
   }else if(accion[1]=="mp"){
     listamp <- c(listamp,list(accion[-1]))
-  }else {"No cumple ni con oficio ni con medida de precauciÃ³n"
+  }else {"No cumple ni con oficio ni con medida de precaución"
   }
 }
 print(listaof)
 
 
-# Agrupar segÃºn temÃ¡ticas 
+# Agrupar según temáticas 
 
 av01 <-list("av01")
 av02 <-list("av02")
@@ -96,7 +90,7 @@ for(x in listaof){
     av07<-c(av07,list(x[2]))
   }else if(x[1]=="av08"){
     av08<-c(av08,list(x[2]))
-  }else{"No Cumple con ningÃºn codigo"}
+  }else{"No Cumple con ningún codigo"}
 }
 
 #entregando estadistica final
@@ -106,12 +100,12 @@ print(listafinal)
 
 
 
-**# EJERCICIO 3**
+########## EJERCICIO 3 #################
 
 rm(list = ls())
 
 #El Juez dictamina que cualquier oficio que entre sus tematicas contenga Datos personales (Dape)
-# serÃ¡ aprobadas, de lo contrario, serÃ¡n reprobadas
+# será aprobadas, de lo contrario, serán reprobadas
 
 rm(list = ls())
 
