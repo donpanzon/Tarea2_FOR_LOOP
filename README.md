@@ -4,7 +4,7 @@ Tarea 2 de For-Loop, la cual consta de 3 ejercicios
 
 
 
-**# EJERCICIO 1** 
+# EJERCICIO 1 
 
 rm(list = ls())
 
@@ -33,14 +33,15 @@ for(vectores in listaDocumentos){
   }else {"No cumple ni con oficio ni con medida de precaución"
   }
 }
-# Entregando estadistica final
+
+#Entregando estadistica final
 
 estadisticafinal <- list(c("Se cuenta con 1 MP de 1 Niñ@"),c("Se cuenta con 2 MP de 2 Niñ@s"),c("Se cuenta con 1 MP de 3 Niñ@s"))
 print(estadisticafinal)
 
 
 
-**# EJERCICIO 2**
+# EJERCICIO 2
 
 rm(list = ls())
 
@@ -70,7 +71,7 @@ for(accion in listaDocumentos){
 print(listaof)
 
 
-# Agrupar según temáticas 
+#Agrupar según temáticas 
 
 av01 <-list("av01")
 av02 <-list("av02")
@@ -106,12 +107,12 @@ print(listafinal)
 
 
 
-**# EJERCICIO 3**
+# EJERCICIO 3
 
 rm(list = ls())
 
 #El Juez dictamina que cualquier oficio que entre sus tematicas contenga Datos personales (Dape)
-# será aprobadas, de lo contrario, serán reprobadas
+#será aprobadas, de lo contrario, serán reprobadas
 
 rm(list = ls())
 
