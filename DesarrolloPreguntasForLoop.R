@@ -24,7 +24,7 @@ for(vectores in listaDocumentos){
     print(paste("Una MP Tiene",length(vectores[-1]),"Niñ@/s"))
   }else if(vectores[1]=="of"){
     listaof <- c(listaof,list(vectores[-1]))
-  }else {"No cumple ni con oficio ni con medida de precaución"
+  }else {"No cumple ni con oficio ni con medida de protección"
   }
 }
 # Entregando estadistica final
