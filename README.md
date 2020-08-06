@@ -16,7 +16,7 @@ listaDocumentos <- list(c("mp","Juan","Christofer"),c("of","av01","ampr"),c("of"
                         c("of","av04","dape"),c("of","av02","arme"))
 
 
-#Separando listas de medidas de protección, oficios u otros
+**Separando listas de medidas de protección, oficios u otros**
 
 listamp <- list()
 contadormp  <- 0
@@ -34,7 +34,7 @@ for(vectores in listaDocumentos){
   }
 }
 
-#Entregando estadistica final
+**Entregando estadistica final**
 
 estadisticafinal <- list(c("Se cuenta con 1 MP de 1 Niñ@"),c("Se cuenta con 2 MP de 2 Niñ@s"),c("Se cuenta con 1 MP de 3 Niñ@s"))
 print(estadisticafinal)
@@ -52,7 +52,7 @@ listaDocumentos <- list(c("mp","Juan","Christofer"),c("of","av01","ampr"),c("of"
                         c("mp","Jose","Pedro","Antonela"),c("of","av05","meca"),
                         c("of","av04","dape"),c("of","av02","arme"))
 
-#Separando listas de medidas de protección, oficios u otros
+**Separando listas de medidas de protección, oficios u otros**
 
 listamp <- list()
 contadormp  <- 0
@@ -71,7 +71,7 @@ for(accion in listaDocumentos){
 print(listaof)
 
 
-#Agrupar según temáticas 
+**Agrupar según temáticas** 
 
 av01 <-list("av01")
 av02 <-list("av02")
@@ -100,7 +100,7 @@ for(x in listaof){
   }else{"No Cumple con ningún codigo"}
 }
 
-#entregando estadistica final
+**entregando estadistica final**
 
 listafinal<-list(unlist(av01),unlist(av02),unlist(av03),unlist(av04),unlist(av05),unlist(av07),unlist(av08))
 print(listafinal)
@@ -111,8 +111,8 @@ print(listafinal)
 
 rm(list = ls())
 
-#El Juez dictamina que cualquier oficio que entre sus tematicas contenga Datos personales (Dape)
-#será aprobadas, de lo contrario, serán reprobadas
+#**El Juez dictamina que cualquier oficio que entre sus tematicas contenga Datos personales (Dape)**
+#**será aprobadas, de lo contrario, serán reprobadas**
 
 rm(list = ls())
 
@@ -128,7 +128,7 @@ aprobados  <- 0
 reprobados  <- 0
 oficios <- list()
 
-#Vaciando a una lista de solo oficios y contando cuantos son
+**Vaciando a una lista de solo oficios y contando cuantos son**
 
 for (x in listaDocumentos){
   if(x[1]=="of"){
@@ -137,7 +137,7 @@ for (x in listaDocumentos){
   }
 }
 
-#Actuando como juez
+**Actuando como juez**
 
 for(y in oficios){
   if(y[2]=="dape"){
